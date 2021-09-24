@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11.HTML图像实例</title>
+</head>
+<body>
+    <h3>默认底部对齐的图像（align="bottom"）:</h3>
+    <p>这是一些文本
+        <img src="./src/bing.svg" alt="bing logo" height="32" width="32">这是一些文本
+    </p>
+    <h3>居中对齐的图像（align="middle"）:</h3>
+    <p>这是一些文本
+        <img src="./src/bing.svg" alt="bing logo" align="middle" height="32" width="32">这是一些文本
+    </p>
+    <h3>顶部对齐的图像（align="top"）:</h3>
+    <p>这是一些文本
+        <img src="./src/bing.svg" alt="bing logo" align="top" height="32" width="32">这是一些文本
+    </p>
+    <p>
+        <b>注意：</b>在HTML4中 align 属性已废弃，HTML5已不支持该属性，可以使用CSS样式代替。
+    </p>
+    <hr>
+    <p><img src="./src/windows.svg" alt="windows logo" style="float:left" height="32" width="32">带图片段落，图片浮动在文本左边</p>
+    <p><img src="./src/windows.svg" alt="windows logo" style="float:right" height="32" width="32">带图片段落，图片浮动在文本右边</p>
+    <p>
+        <b>注意：</b>这里使用CSS float 属性，在HTML4中已废弃，HTML5已不支持该属性，可以使用CSS样式代替。
+    </p>
+    <hr>
+    <p>图片链接：
+        <a href="https://cn.bing.com/">
+        <img border="3" src="./src/bing.svg" alt="微软bing搜索" width="32" height="32">
+        </a>
+    </p>
+    <p>无边框图片链接：
+        <a href="https://cn.bing.com/">
+        <img border="0" src="./src/bing.svg" alt="微软bing搜索" widt="32" height="32">    
+        </a>
+    </p>
+</body>
+</html>

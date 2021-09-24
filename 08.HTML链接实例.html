@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08.HTML链接实例</title>
+</head>
+<body>
+    <p>创建图片链接：
+        <a href="https://cn.bing.com/">
+        <img border="5" src="./src/bing.svg" alt="微软bing搜索" width="64" height="64">
+        </a>
+    </p>
+    <p>无边框图片链接(在新窗口打开)：
+        <a href="https://cn.bing.com" target="_blank">
+        <img border="0" src="./src/bing.svg" alt="微软bing搜索" widt="64" height="64">    
+        </a>
+    </p>
+    <hr>
+    <p>电子邮件链接：
+        <a href="mailto:example@example.com?Subject=这是一个新的邮件%20标题" target="_top">发送邮件</a>
+    </p>
+    <p>
+        注意：邮件链接里面的内容用了%20来代替空格，以确保浏览器可以正常显示文本。
+    </p>
+    <p>复杂电子邮件链接(含抄送和密送)：
+        <a href="mailto:mail1@example.com?cc=mail2@example.com&bcc=mail3@example.com&Subject=这是一个新的邮件%20标题&body=这里是邮件内容%20正文内容" target="_top">发送邮件</a>
+    </p>
+    <p>
+        注意：邮件链接里面的内容用了%20来代替空格，以确保浏览器可以正常显示文本。
+    </p>
+    <hr>
+    <p>
+        <p><a href="#C5">查看章节5</a></p>
+        <h2><a id="C1">章节1</a></h2>
+        <p>章节内容...</p>
+        <h2>章节2</h2>
+        <p>章节内容...</p>
+        <h2>章节3</h2>
+        <p>章节内容...</p>
+        <h2>章节4</h2>
+        <p>章节内容...</p>
+        <h2><a id="C5">章节5</a></h2>
+        <p>章节内容...</p>
+   </p>
+</body>
+</html>
