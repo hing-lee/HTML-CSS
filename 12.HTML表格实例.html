@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12.HTML表格实例</title>
+</head>
+    <h3>无边框表格</h3>
+    <table>
+    <tr>
+        <td>行1，单元格1</td>
+        <td>行1，单元格2</td>
+    </tr>
+    <tr>
+        <td>行2，单元格1</td>
+        <td>行2，单元格2</td>
+    </tr>
+    </table>
+    
+    <h3>有边框表格</h3>
+    <table border="1">
+        <tr>
+            <td>行1，单元格1</td>
+            <td>行1，单元格2</td>
+        </tr>
+        <tr>
+            <td>行2，单元格1</td>
+            <td>行2，单元格2</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>水平标题表格</h3>
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>lee</td>
+        </tr>
+    </table>
+    <h3>垂直标题表格</h3>
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <td>001</td>
+        </tr>
+        <tr>
+            <th>name</th>
+            <td>lee</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>带表格标题表格</h3>
+    <table border="1">
+        <caption> Guest List
+            <tr>
+                <th>id</th>
+                <th>name</th>
+            </tr>
+            <tr>
+                <td>0001</td>
+                <td>lee</td>
+            </tr>
+            <tr>
+                <td>0002</td>
+                <td>huang</td>
+            </tr>
+        </caption>
+    </table>
+    <hr>
+    <h3>跨列表格(colspan)</h3>
+    <table border="1">
+        <tr>
+            <th>name</th>
+            <th colspan="2">phone</th>
+        </tr>
+        <tr>
+            <td>lee</td>
+            <td>18918918918</td>
+            <td>13913913913</td>
+        </tr>
+    </table>
+    <h3>跨行表格(rowspan)</h3>
+    <table border="1">
+        <tr>
+            <th>name</th>
+            <td>lee</td>
+        </tr>
+        <tr>
+            <th rowspan="2">phone</th>
+            <td>18918918918</td>
+        </tr>
+        <tr>
+            <td>13913913913</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>表格内的其他元素</h3>
+    <table border="1">
+        <tr>
+            <td><p>row1.表格内的段落</p></td>
+        </tr>
+        <tr>
+            <td>row2.单元格内的表格：
+                <table border="1">
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>lee</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>row3.单元格内的列表
+                <ul>
+                    <li>list1</li>
+                    <li>list2</li>
+                    <li>list3</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>row4.cell1</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>无单元格边距</h3>
+    <table border="1">
+        <tr>
+            <td>row1</td>
+            <td>cell1</td>
+        </tr>
+        <tr>
+            <td>row2</td>
+            <td>cell1</td>
+        </tr>
+    </table>
+    <h3>有单元格边距(cellpadding)</h3>
+    <table border="1" cellpadding="5">
+        <tr>
+            <td>row1</td>
+            <td>cell1</td>
+        </tr>
+        <tr>
+            <td>row2</td>
+            <td>cell1</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>无单元格间距</h3>
+    <table border="1">
+        <tr>
+            <td>row1</td>
+            <td>cell1</td>
+        </tr>
+        <tr>
+            <td>row2</td>
+            <td>cell1</td>
+        </tr>
+    </table>
+    <h3>单元格间距(cellspacing)为10</h3>
+    <table border="1" cellspacing="10">
+        <tr>
+            <td>row1</td>
+            <td>cell1</td>
+        </tr>
+        <tr>
+            <td>row2</td>
+            <td>cell1</td>
+        </tr>
+    </table>
+    <h3>单元格间距(cellspacing)为0</h3>
+    <table border="1" cellspacing="0">
+        <tr>
+            <td>row1</td>
+            <td>cell1</td>
+        </tr>
+        <tr>
+            <td>row2</td>
+            <td>cell1</td>
+        </tr>
+    </table>
+</body>
+</html>
