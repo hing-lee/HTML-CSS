@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15.HTML布局(div)</title>
+</head>
+<body>
+    <h3>使用 div 布局</h3>
+    <!-- 定义一个全局布局div层 -->
+    <div id="webpage"style="width:500px">
+    <!-- 定义一个头部层 指定背景颜色 包含一个底部对齐一级标题    -->
+    <div id="header"style="background-color:#303F9F;">
+    <h3 style="margin-bottom:0;">这里是页首</h3>
+    </div>
+    <!-- 定义一个菜单层 指定背景颜色 高200px 宽100px 向左浮动 -->
+    <div id="menu"style="background-color:#FF5722;height:200px;width:100px;float:left;">
+    <b>MENU</b><br>
+    HTML<br>
+    CSS<br>
+    JavaScript
+    </div>
+    <!-- 定义一个内容层 位于菜单层右侧 指定背景颜色 高200px 宽400px 向左浮动 -->
+    <div id="content"style="background-color:#C5CAE9;height:200px;width:400px;float:left;">
+    <h3>内容主体</h3>
+    <p>主要内容显示在这里！！</p>
+    </div>
+    <!-- 定义一个页脚部分 指定背景颜色 元素不能左右移动 字体居中 -->
+    <div id="footer"style="background-color:#3F51B5;clear:both;text-align:center;">
+    这里是页脚
+    </div>
+    <hr>
+    <h3>使用 table 布局</h3>
+    <table width="500px" border="0">
+        <tr>
+            <td colspan="2"style="background-color:#303F9F;">
+            <h3>这里是页首</h3>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color:#FF5722;width:100px;">
+            <b>MENU</b><br>
+            HTML<br>
+            CSS<br>
+            JavaScript
+            </td>
+            <td style="background-color:#C5CAE9;height: 200px;width: 400px;">
+            <h3>内容主体</h3>
+            <p>主要内容显示在这里！！</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: #3F51B5;text-align: center;">
+            这里是页脚
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

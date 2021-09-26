@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13.HTML列表实例</title>
+</head>
+<body>
+    <h3>编号列表：</h3>
+    <ol>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+        <li>juice</li>
+    </ol>
+
+    <h3>大写字母列表(type="A")：</h3>
+    <ol type="A">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+        <li>juice</li>
+    </ol>
+    <h3>大写字母列表(type="a")：</h3>
+    <ol type="a">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+        <li>juice</li>
+    </ol>
+    <h3>罗马数字列表(type="I")：</h3>
+    <ol type="I">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+        <li>juice</li>
+    </ol>
+    <h3>小写罗马数字列表(type="i")：</h3>
+    <ol type="i">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+        <li>juice</li>
+    </ol>
+    <hr>
+    <p><b>注意：</b>在HTML4中 ul 的属性已废弃，HTML5已不在支持，因此可以使用 CSS 代替不同类型的无序列表样式：</p>
+    <h3>圆点列表(list-style-type:disc)：</h3>      
+    <ul style="list-style-type:disc">
+        <li>apple</li>
+        <li>bananas</li>
+        <li>lemons</li>
+        <li>oranges</li>
+    </ul>
+    <h3>圆圈列表(list-style-type:circle)：</h3>      
+    <ul style="list-style-type:circle">
+        <li>apple</li>
+        <li>bananas</li>
+        <li>lemons</li>
+        <li>oranges</li>
+    </ul>
+    <h3>方形列表(list-style-type:square)：</h3>      
+    <ul style="list-style-type:square;">
+        <li>apple</li>
+        <li>bananas</li>
+        <li>lemons</li>
+        <li>oranges</li>
+    </ul>
+    <hr>
+    <h3>嵌套列表:</h3>
+    <ul>
+        <li>coffee</li>
+        <li>tea
+            <ul>
+                <li>black tea</li>
+                <li>green tea
+                    <ul>
+                        <li>china</li>
+                        <li>africa</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>    
+         <li>milk
+             <ol>
+                 <li>full cream milk</li>
+                 <li>semi skimmed milk</li>
+             </ol>
+         </li>   
+    </ul>            
+</body>
+</html>
