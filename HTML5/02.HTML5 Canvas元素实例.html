@@ -1,23 +1,142 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML5 Canvas元素实例</title>
-</head>
-<body>
-    <canvas id="can1" width="200" height="100" style="border:1px solid #c3c3c3;">
+  </head>
+  <body>
+    <canvas
+      id="can1"
+      width="200"
+      height="100"
+      style="border: 1px solid #c3c3c3"
+    >
+    </canvas>
+    <hr />
+    <canvas
+      id="canvas2"
+      width="200"
+      height="100"
+      style="border: 1px solid #c3c3c3"
+    >
+    </canvas>
+    <canvas
+      id="canvas3"
+      width="200"
+      height="100"
+      style="border: 1px solid #c3c3c3"
+    >
+    </canvas>
+    <hr />
+    <canvas
+      id="canvas4"
+      width="200"
+      height="100"
+      style="border: 1px solid #c3c3c3"
+    >
+    </canvas>
+    <canvas
+      id="canvas5"
+      width="200"
+      height="100"
+      style="border: 1px solid #c3c3c3"
+    >
+    </canvas>
+    <hr />
+    <canvas
+      id="canvas6"
+      width="200"
+      height="100"
+      style="border: 1px solid #c3c3c3"
+    >
+    </canvas>
+    <canvas
+      id="canvas7"
+      width="200"
+      height="100"
+      style="border: 1px solid #c3c3c3"
+    >
+    </canvas>
+    <hr />
+    <p>Image to use:</p>
+    <img
+      id="watch7"
+      src="./src/watch7.png"
+      alt="The Scream"
+      width="288"
+      height="260"
+    />
+    <p>Canvas:</p>
+    <canvas
+      id="canvas8"
+      width="300"
+      height="300"
+      style="border: 1px solid #d3d3d3"
+    >
     </canvas>
 
     <script>
+      // 实例1
+      var c = document.getElementById("can1");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "#FCCF31";
+      ctx.fillRect(0, 0, 150, 75);
+      // 实例2
+      var c = document.getElementById("canvas2");
+      var ctx = c.getContext("2d");
+      ctx.moveTo(0, 0);
+      ctx.lineTo(200, 100);
+      ctx.stroke();
+      // 实例3
+      var c = document.getElementById("canvas3");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(100, 50, 40, 0, 2 * Math.PI);
+      ctx.stroke();
+      // 实例4
+      var c = document.getElementById("canvas4");
+      var ctx = c.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.fillText("Hello World", 20, 60);
+      // 实例5
+      var c = document.getElementById("canvas5");
+      var ctx = c.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.strokeText("Hello World", 20, 60);
+      // 线性实例6
+      var c = document.getElementById("canvas6");
+      var ctx = c.getContext("2d");
 
-    var c=document.getElementById("can1");
-    var ctx=c.getContext("2d");
-    ctx.fillStyle="#ff0000";
-    ctx.fillRect(0,0,150,75);
+      // 创建渐变
+      var grd = ctx.createLinearGradient(0, 0, 200, 0);
+      grd.addColorStop(0, "#FCCF31");
+      grd.addColorStop(1, "#F55555");
 
+      // 填充渐变
+      ctx.fillStyle = grd;
+      ctx.fillRect(10, 10, 150, 80);
+
+      // 镜像渐变实例
+      var c = document.getElementById("canvas7");
+      var ctx = c.getContext("2d");
+      // 创建渐变
+      var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+      grd.addColorStop(0, "red");
+      grd.addColorStop(1, "white");
+      // 填充渐变
+      ctx.fillStyle = grd;
+      ctx.fillRect(10, 10, 150, 80);
+
+      // 图片置入画布实例
+      var c = document.getElementById("canvas8");
+      var ctx = c.getContext("2d");
+      var img = document.getElementById("watch7");
+
+      img.onload = function () {
+        ctx.drawImage(img,10,10)
+      }
     </script>
-
-</body>
+  </body>
 </html>
